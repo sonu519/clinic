@@ -159,7 +159,7 @@ nav a{
 #hero-sec{
   height: 100svh;
   width: 100%;
-  background-image: url(/images/web-pic4.webp),url(/images/web-pic4.jpeg);
+  background-image: url(/images/web-pic4.jpeg),url(/images/web-pic4.webp);
   background-size: cover;
   background-position: right;
   padding-top: 9svh;
@@ -258,7 +258,7 @@ nav a{
 .doc-pfp{
   height: 40%;
   width: 80%;
-  background-image: url(/images/doc-pic.webp),url(/images/doc-pic.png);
+  background-image: url(/images/doc-pic.png),url(/images/doc-pic.webp);
   background-size: cover;
   background-position: center;
   border-radius:120px ;
@@ -296,7 +296,7 @@ nav a{
   align-items: center;
 }
 #pic{
-  background-image: url(/images/webpic2.webp),url(/images/webpic2.png);
+  background-image: url(/images/webpic2.png),url(/images/webpic2.webp);
   background-size: cover;
   background-position: center;
   height: 30%;
