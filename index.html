@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+
+  <div id="cta-con">
+    <div id="watsapp-b" ><a 
+      href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="" srcset="">
+    </a></div>
+
+    <div id="call-b" class="button"><a 
+      href="tel:+917893596934">
+      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M648-522.67V-648H522.67v-66.67H648V-840h66.67v125.33H840V-648H714.67v125.33H648ZM796-120q-119 0-240-55.5T333-333Q231-435 175.5-556T120-796q0-18.86 12.57-31.43T164-840h147.33q14 0 24.34 9.83Q346-820.33 349.33-806l26.62 130.43q2.05 14.9-.62 26.24-2.66 11.33-10.82 19.48L265.67-530q24 41.67 52.5 78.5T381-381.33q35 35.66 73.67 65.5Q493.33-286 536-262.67l94.67-96.66q9.66-10.34 23.26-14.5 13.61-4.17 26.74-2.17L806-349.33q14.67 4 24.33 15.53Q840-322.27 840-308v144q0 18.86-12.57 31.43T796-120ZM233-592l76-76.67-21-104.66H187q3 41.66 13.67 86Q211.33-643 233-592Zm365.33 361.33q40.34 18.34 85.84 29.67 45.5 11.33 89.16 13.67V-288l-100-20.33-75 77.66ZM233-592Zm365.33 361.33Z"/></svg>
+    </a></div>
+    <button onclick="ctaDone()" id="cta-button"  class="button" >
+      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M796-120q-119 0-240-55.5T333-333Q231-435 175.5-556T120-796q0-18.86 12.57-31.43T164-840h147.33q14 0 24.34 9.83Q346-820.33 349.33-806l26.62 130.43q2.05 14.9-.62 26.24-2.66 11.33-10.82 19.48L265.67-530q24 41.67 52.5 78.5T381-381.33q35 35.66 73.67 65.5Q493.33-286 536-262.67l94.67-96.66q9.66-10.34 23.26-14.5 13.61-4.17 26.74-2.17L806-349.33q14.67 4 24.33 15.53Q840-322.27 840-308v144q0 18.86-12.57 31.43T796-120ZM233-592l76-76.67-21-104.66H187q3 41.66 13.67 86Q211.33-643 233-592Zm365.33 361.33q40.34 18.34 85.84 29.67 45.5 11.33 89.16 13.67V-288l-100-20.33-75 77.66ZM233-592Zm365.33 361.33Z"/></svg>
+    </button>
+  </div>
+
+  <nav>
+    <div class="logo-name">
+      <svg class="logo1" xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#ffffff"><path d="M680-875q66 0 113 47t47 113q0 11-1.5 29.5T834-643l-55 403q-5 38-34.5 62T677-154q-23 0-42.5-10T602-192L495-348q-2-4-6.5-5.5T479-355q-4 0-16 9L359-195q-14 20-34.5 30.5T281-154q-38 0-67-24.5T180-241l-54-402q-3-24-4.5-42.5T120-715q0-66 47-113t113-47q36 0 57.5 9.5T379-845q20 11 42.5 20.5T480-815q36 0 58.5-9.5T581-845q20-11 42-20.5t57-9.5Zm0 80q-23 0-40.5 9.5T601-765q-21 11-49 20.5t-72 9.5q-44 0-72-9.5T359-765q-21-11-38.5-20.5T280-795q-33 0-56.5 23.5T200-715q0 8 1 23t4 35l55 405q1 8 7 12.5t14 4.5q5 0 9-2t6-6l101-148q14-20 36-32t47-12q25 0 47 12t36 32l103 151q2 3 5 4.5t7 1.5q8 0 14.5-4.5T700-251l55-406q3-20 4-35t1-23q0-33-23.5-56.5T680-795ZM480-515Z"/></svg>
+      <a href="index.html" class="logo2"> CLINIC</a>
+    </div>
+
+    <label  class="open-button" 
+      for="sidebar-active">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+      </label>
+    <input type="checkbox" id="sidebar-active">
+    <label id="overlay" for="sidebar-active" >
+    </label>
+
+    <div class="links-container">
+      <label for="sidebar-active" class="close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
+      
+      <A href="index.html"  class="h-link link"> 
+        Home</A>
+      <A href="#"  class="a-link link"> 
+        About Us</A>
+      <A href="#"  class="l-link link"> 
+        Contact </A>
+      <A href="#"  class="c-link link"> 
+        Gallery</A>
+    </div>
+  </nav> 
+
+  <div id="main" data-scroll-container> 
+  
+    <section id="hero-sec" data-scroll  data-scroll-speed="-4">
+      <div id="mh-text">
+        <h1>Happy <br> <span>Smiles</span><br>for <br>All Ages</h1>
+        <p>Restoring smiles <br>with precision and care</p>
+      </div>
+    </section>
+
+    <section id="abt-us" data-scroll>
+      <div id="abt-con">
+  
+        <H2 id="abt-h">About Us</H2>
+        <div id="abt-l" class="h-line"></div>
+
+        <div id="abt-docs">
+  
+          <H3 id="doc-h">Doctors</H3>
+          <H3 id="info-h">Information</H3>
+
+          <div class="doc " id="doc1">
+            <div class="doc-pfp" id="pfp1" data-scroll  data-scroll-speed="-.2"></div>
+            <div class="info">
+              <h3>name </h3> 
+              <p>experiance </p> 
+              <p>implants </p>
+              <p> surgeries</p>
+            </div>
+          </div>
+          
+          <div class="doc " id="doc2">
+            <div class="doc-pfp" id="pfp2" data-scroll  data-scroll-speed="-.2"></div>
+            <div class="info">
+              <h3>name </h3> 
+              <p>experiance </p> 
+              <p>implants </p>
+              <p> surgeries</p>
+            </div>
+          </div>
+          
+          <div class="doc " id="doc3">
+            <div class="doc-pfp" id="pfp3" data-scroll  data-scroll-speed="-.2"></div>
+            <div class="info">
+              <h3>name </h3> 
+              <p>experiance </p> 
+              <p>implants </p>
+              <p> surgeries</p>
+            </div>
+          </div>
+  
+          <div id="dots">
+            <a href="#doc1" class="dot-btn">
+              &#x2022;
+            </a>
+            <a href="#doc2" class="dot-btn">
+              &#x2022;
+            </a>
+            <a href="#doc3" class="dot-btn">
+              &#x2022;
+            </a>
+          </div>
+        </div>
+        <div id="abt-info">
+          <div id="info-con">
+            <div id="pic"data-scroll  data-scroll-speed="-.2"></div>
+            <p>Welcome to [Clinic Name], where smiles are crafted with care and expertise. Our state-of-the-art dental clinic is dedicated to providing top-notch oral healthcare in a warm and welcoming environment. With a team of highly skilled dentists and staff, we offer a comprehensive range of services, from routine cleanings and fillings to advanced cosmetic and restorative procedures. At [Clinic Name], your comfort and satisfaction are our top priorities, and we strive to exceed your expectations at every visit. Trust us to restore your confidence in your smile and your overall oral health</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="s-sec" data-scroll>
+
+      <h2 id="ser-h">Our Experties</h2>
+      <div id="ser-l" class="h-line"></div>
+
+      <div id="s-con">
+        <div id="s-left">
+          <div class="ser-con">
+            <div class="ser" id="ser1" data-scroll  data-scroll-speed="-.4"></div>
+            <h3>General dentistry</h3>
+          </div>
+          <div class="ser-con">
+            <div class="ser" id="ser2" data-scroll  data-scroll-speed="-.4"></div>
+            <h3>Orthodontics</h3>
+          </div>
+        </div>
+        <div id="s-right">
+          <div class="ser-con">
+            <div class="ser" id="ser3" data-scroll  data-scroll-speed="-.4"></div>
+            <h3>surgery</h3>
+          </div>
+          <div class="ser-con">
+            <div class="ser" id="ser4" data-scroll  data-scroll-speed="-.4"></div>
+            <h3>Cosmetic dentistry</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="t-sec" data-scroll>
+
+      <h2 id="time-h">Timings</h2>
+
+      <div id="t-con">
+        <div id="t-left">
+          <h3 class="t-h">Day</h3>
+          <p>sunday</p>
+          <p>saturday</p>
+          <p>friday</p>
+          <p>thursday</p>
+          <p>wednesday</p>
+          <p>tuesday</p>
+          <p>monday</p>
+        </div>
+        <div id="t-mid">
+          <h3 class="t-h">Morning</h3>
+          <p>8am to 2pm</p>
+          <p>8am to 3pm</p>
+          <p>8am to 3pm</p>
+          <p>8am to 3pm</p>
+          <p>8am to 3pm</p>
+          <p>8am to 3pm</p>
+          <p>8am to 3pm</p>
+        </div>
+        <div id="t-right">
+          <h3 class="t-h">Noon</h3>
+          <p>3pm to 6pm</p>
+          <p>5pm to 8pm</p>
+          <p>5pm to 8pm</p>
+          <p>5pm to 8pm</p>
+          <p>5pm to 8pm</p>
+          <p>5pm to 8pm</p>
+          <p>5pm to 8pm</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tes-sec" data-scroll>
+
+      <h2 id="tes-h">Testimonials</h2>
+
+      <div id="tes-con">
+        <div id="tes-left">
+          <div class="tes">
+            <div class="tes-pfp" id="tes-pfp1" data-scroll  data-scroll-speed="-.2"></div>
+            <div class="tes-info">
+              <h3>Rajesh</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="tes">
+            <div class="tes-pfp" id="tes-pfp2" data-scroll  data-scroll-speed="-.2"></div>
+            <div class="tes-info">
+              <h3>Shiva</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, laudantium sint.</p>
+            </div>
+          </div>
+          
+        </div>
+        <div id="tes-right">
+          <div class="tes">
+            <div class="tes-pfp" id="tes-pfp3" data-scroll  data-scroll-speed="-.2"></div>
+            <div class="tes-info">
+              <h3>Jagadish</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ea?</p>
+            </div>
+          </div>
+          <div class="tes">
+            <div class="tes-pfp" id="tes-pfp4" data-scroll  data-scroll-speed="-.2"></div>
+            <div class="tes-info">
+              <h3>Sidhartha</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
