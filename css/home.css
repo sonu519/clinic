@@ -867,6 +867,7 @@ nav a{
   } 
   #abt-h{
     font-size: 5.8vw;
+    top: 6%;
   }
   #doc-h{
     left: 42.5%;
@@ -898,11 +899,11 @@ nav a{
     width: 100%;
   }
   #ser-h{
-    top: 51.7%;
+    top: 49.5%;
     font-size: 5.8vw;
   }
   #ser-l{
-    top: 52.5%;
+    top: 50.6%;
   }
   #s-con h3{
     font-size: 4.8vw;
@@ -914,7 +915,7 @@ nav a{
     font-size: 4vw;
   }
   #tes-sec{
-    height: 60svh;
+    height: 70svh;
   }
   #t-con p{
     font-size: 3.5vw;
@@ -938,14 +939,14 @@ nav a{
   }
   #time-h{
     font-size: 5.8vw;
-    top: 73.5%;
+    top: 71.2%;
   }
   #t-con{
     margin-bottom: 24%;
   }
   #tes-h{
     font-size: 5.8vw;
-    top: 84.5%;
+    top: 82.3%;
   }
   .tes-info h3{
     font-size: 3vw;
