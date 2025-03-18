@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 #main{
+  margin: auto;
+  max-width: 1920px;
   position: relative;
+  background-color: black;
   color: white;
 }
+/*cta button start*/
 #cta-con{
   width: 100px;
   height: 100px;
@@ -14,8 +18,8 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 86%;
-  right: 18%;
+  top: 88%;
+  right: 20%;
   z-index: 998;
 }
 #cta-button{
@@ -55,7 +59,8 @@ img{
   border-radius: 30px;
   background-color: black;
 }
-
+/*cta button end*/
+/*navbar start*/
 nav{
   position: fixed;
   top: 0;
@@ -155,7 +160,8 @@ nav a{
     z-index: 998;
   }
 }
-
+/*navbar end*/
+/*hero section start*/
 #hero-sec{
   height: 100svh;
   width: 100%;
@@ -174,6 +180,7 @@ nav a{
 #mh-text H1{
   font-size: 6vw;
   text-transform:uppercase;
+  color: white;
 }
 #mh-text H1 span{
   color: #8cc7db;
@@ -183,8 +190,8 @@ nav a{
   text-transform:capitalize;
   color: #8cc7db;
 }
-
-
+/*hero section end*/
+/*about us section start*/
 #abt-us{
   height: 100svh;
   width: 100%;
@@ -219,6 +226,7 @@ nav a{
   left: 30.5%;
   font-size: 2.2vw;
   color: #bd861f;
+  z-index: 2;
 }
 #info-h{
   position: absolute;
@@ -226,6 +234,7 @@ nav a{
   right: 15%;
   font-size: 2.2vw;
   color: #bd861f;
+  z-index: 2;
 }
 #abt-l{
   position: absolute;
@@ -311,6 +320,8 @@ nav a{
 #dots{
   display: none;
 }
+/*about us section end*/
+/*services section start*/
 #s-sec{
   height: 100svh;
   width: 100%;
@@ -390,6 +401,8 @@ nav a{
   background-size: cover;
   background-position: center;
 }
+/*services section end*/
+/*timings section start*/
 #t-sec{
   height: 60svh;
   width: 100%;
@@ -447,6 +460,8 @@ nav a{
   justify-content: center;
   align-items: center;
 }
+/*timings section end*/
+/*testimonials section start*/
 #tes-sec{
   height: 40svh;
   width: 100%;
@@ -507,7 +522,7 @@ nav a{
   background-color: lightgoldenrodyellow;
 }
 .tes-info{
-  height: 70%;
+  height: fit-content;
   width: 60%;
   padding: 2%;
   border: 2px solid #7aabbb;
@@ -519,6 +534,7 @@ nav a{
 }
 .tes-info p{
   font-size: .8vw;
+  color: black;
 }
 #tes-pfp1{
   background-image: url(https://plus.unsplash.com/premium_photo-1675130119373-61ada6685d63?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -540,8 +556,8 @@ nav a{
   background-size: cover;
   background-position: top;
 }
-
-
+/*testimonials section end*/
+/*media queraies*/
 @media(max-width: 1440px){
   .logo2{
     font-size: 1.6vw;
@@ -557,12 +573,15 @@ nav a{
   }
 }
 @media(max-width: 1024px){
+  /*nav*/
   .logo2{
     font-size: 2.2vw;
   }
   nav a{
     font-size: 1.8vw;
   }
+  /*nav*/
+  /*abt sec*/
   #abt-con{
     flex-direction: column;
   }
@@ -618,6 +637,8 @@ nav a{
   #info-con p{
     font-size: 1.4vw;
   }
+  /*abt sec*/
+  /*services sec*/
   #s-con{
     height: 70svh;
     width: 90%;
@@ -639,9 +660,13 @@ nav a{
     font-size: 2.4vw;
     color: #bd861f;
   }
+  /*services sec*/
+  /*timings sec*/
   #time-h{
     font-size: 3vw;
   }
+  /*timings sec*/
+  /*tes sec*/
   #tes-h{
     font-size: 3vw;
   }
@@ -651,15 +676,18 @@ nav a{
   .tes-info p{
     font-size: 1.1vw;
   }
-
+  /*tes sec*/
 }
 @media(max-width: 768px){
+  /*nav*/
   .logo2{
     font-size: 2.8vw;
   }
   nav a{
     font-size: 2.6vw;
   }
+  /*nav*/
+  /*hero sec*/
   #mh-text{
     width: 55%;
     height: 70svh;
@@ -670,6 +698,8 @@ nav a{
   #mh-text p{
     font-size: 4vw;
   }
+  /*hero sec*/
+  /*abt sec*/
   #abt-con{
     height: 85svh;
   }
@@ -757,6 +787,8 @@ nav a{
   .dot-btn {
     font-size: 35px;
   }
+  /*abt sec*/
+  /*services sec*/
   #s-con{
     display: flex;
     flex-direction: column;
@@ -787,12 +819,19 @@ nav a{
   #s-con h3{
     font-size: 2.8vw;
   }
+  /*services sec*/
+  /*timings sec*/
   .t-h{
     font-size: 2.5vw;
   }
   #t-con p{
     font-size: 2vw;
   }
+  #time-h{
+    font-size: 3.4vw;
+  }
+  /*timings sec*/
+  /*tes sec*/
   #tes-con{
     display: flex;
     flex-direction: column;
@@ -808,9 +847,6 @@ nav a{
     height: 50%;
     width: 80%;
   }
-  #time-h{
-    font-size: 3.4vw;
-  }
   #tes-h{
     font-size: 3.4vw;
   }
@@ -820,8 +856,9 @@ nav a{
   .tes-info p{
     font-size: 1.5vw;
   }
-
+  /*tes sec*/
 }
+/*hero sec*/
 @media(max-width: 660px){
   #mh-text{
     width: 55%;
@@ -834,14 +871,17 @@ nav a{
     font-size: 3vw;
   }
 }
-
+/*hero sec*/
 @media(max-width: 425px){
+  /*nav*/
   .logo2{
     font-size: 4.6vw;
   }
   nav a{
     font-size: 4.4vw;
   }
+  /*nav*/
+  /*hero sec*/
   #hero-sec{
     display: flex;
     justify-content: flex-end;
@@ -858,6 +898,8 @@ nav a{
   #mh-text p{
     font-size: 4.5vw;
   }
+  /*hero sec*/
+  /*abt sec*/
   #abt-con{
     height: 80svh;
   }
@@ -887,6 +929,8 @@ nav a{
   #info-con p{
     font-size: 2.8vw;
   }
+  /*abt sec*/
+  /*services sec*/
   #s-con{
     margin-bottom: 24%;
   }
@@ -908,17 +952,28 @@ nav a{
   #s-con h3{
     font-size: 4.8vw;
   }
+  /*services sec*/
+  /*timings sec*/
+  #time-h{
+    font-size: 5.8vw;
+    top: 71.2%;
+  }
+  #t-con p{
+    font-size: 3.5vw;
+  }
+  #t-con{
+    margin-bottom: 24%;
+  }
   #t-sec{
     height: 30svh;
   }
   .t-h{
     font-size: 4vw;
   }
+  /*timings sec*/
+  /*tes sec*/
   #tes-sec{
     height: 70svh;
-  }
-  #t-con p{
-    font-size: 3.5vw;
   }
   .tes{
     height: 45%;
@@ -937,13 +992,6 @@ nav a{
     height: 45%;
     width: 90%;
   }
-  #time-h{
-    font-size: 5.8vw;
-    top: 71.2%;
-  }
-  #t-con{
-    margin-bottom: 24%;
-  }
   #tes-h{
     font-size: 5.8vw;
     top: 82.3%;
@@ -954,6 +1002,8 @@ nav a{
   .tes-info p{
     font-size: 2vw;
   }
+  /*tes sec*/
+  /*cta button*/
   #cta-con{
     height: 50px;
     width: 50px;
@@ -972,7 +1022,7 @@ nav a{
   #call-b{
     top: -5%;
   }
-
+  /*cta button*/
 }
 @media(max-width: 375px){
   .logo2{

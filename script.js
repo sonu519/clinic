@@ -24,3 +24,36 @@ function ctaDone(){
     view = 0;
   }
 }
+
+/*function navanimation(){
+  var navtl = gsap.timeline()
+  navtl.from("#nav .logo-name svg,a",{
+    y:-30,
+    duration:0.8,
+    opacity:0,
+    stagger:0.2
+  })
+
+  navtl.from("#hero-sec #mh-text h1",{
+    x:-300,
+    duration:0.6,
+    opacity:0,
+    delay:-0.5
+  })
+
+  navtl.from("#hero-sec #mh-text p",{
+    x:-100,
+    duration:0.6,
+    opacity:0,
+    delay:-0.5
+  })
+}
+navanimation()
+
+var pagestl = gsap.timeline()
+pagestl.from("#abt-us #abt-con",{
+  y:-300,
+  duration:1,
+  opacity:0,
+})
+*/
